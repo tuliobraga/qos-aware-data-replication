@@ -83,7 +83,7 @@ def cover_cost(G, storage_costs, qos_requirements, root, alpha, mu):
 
 	return cover_abstract(G, storage_costs, qos_requirements, root, alpha, mu, cover_cost_heuristic, get_set_cover)
 		
-def dynamic_cover(G, storage_costs, qos_requirements, root, alpha, mu):
+def dynamic_cost(G, storage_costs, qos_requirements, root, alpha, mu):
 	from collections import Counter
 	shortest_paths_length = nx.all_pairs_shortest_path_length(G)
 	copies = [root]
